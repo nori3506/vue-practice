@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue3</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="app">
+    <h2>Computed</h2>
+    <p>First Name <input type="text" v-model="first"></p>
+    <p>Last Name <input type="text" v-model="last"></p>
+    <p>FullName: {{ fullName }}</p>
+
+    <h2>Watcher</h2>
+    <p>First Name <input type="text" v-model="first1"></p>
+    <p>Last Name <input type="text" v-model="last1"></p>
+    <p>{{ fullName1 }}</p>
+  </div>
+
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <script src="main.js"></script>
+</body>
+</html>
