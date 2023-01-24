@@ -5,15 +5,16 @@ const app = Vue.createApp({
     message: ''
   }),
   watch: {
-
+    keyword: function () {
+      this.message = 'Waiting for you to sop typing'
+      this.debouncedGetAnswer()
+    }
   },
-  mounted: function () {
-    this.keyword = 'JavaScript'
-    this.getAnswer()
-
+  mounted: function() {
+    this.debouncedGetAnswer = _.debounce(this.getAnswer, 1000)
   },
   methods: {
-    getAnswer: function () {
+    getAnswer: function() {
       if(this.keyword === '') {
         console.log('karamoji')
         this.items = null
