@@ -7,7 +7,9 @@ const app = Vue.createApp({
     dangerClass: {
       'text-danger': true
     },
-    isLarge: true
+    isLarge: true,
+    color: "blue",
+    fontSize: 48
   }),
   watch: {
   },
