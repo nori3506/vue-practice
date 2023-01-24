@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data: () => ({
-    color: "g"
+    color: "g",
+    toggle: true
   }),
   watch: {
   },
