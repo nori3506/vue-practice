@@ -9,7 +9,11 @@ const app = Vue.createApp({
     },
     isLarge: true,
     color: "blue",
-    fontSize: 48
+    fontSize: 48,
+    styleObject: {
+      color: "green",
+      fontSize: "60px",
+    }
   }),
   watch: {
   },
