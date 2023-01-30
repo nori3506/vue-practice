@@ -15,6 +15,17 @@
 
     <h1>method event Handler</h1>
     <button v-on:click="clickHandler">Click2</button>
+
+    <h1>event</h1>
+    <button v-on:click="clickHandler1" id="btn">
+      Click3
+    </button>
+
+    <h1>event</h1>
+    <button v-on:click="clickHandler2($event, 'Vue.js')" id="btn2">
+      Click3
+    </button>
+    <p>{{ message }}</p>
   </div>
 
   <script src="https://unpkg.com/vue@3.1.5"></script>
