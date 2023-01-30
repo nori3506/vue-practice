@@ -1,7 +1,8 @@
 const app = Vue.createApp({
   data: () => ({
     message: 'Hello Nori',
-    message1: 'Hey'
+    message1: 'Hey',
+    checked: false
   }),
   watch: {
   },

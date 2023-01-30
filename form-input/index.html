@@ -13,11 +13,16 @@
     <p>{{ message }}</p>
     <pre>{{ $data }}</pre>
     <input type="text" v-model="message1" value="aaa">
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
     <!-- <textarea>{{ message }}</textarea> -->
     <textarea v-model="message"></textarea>
+
+    <h1>Checkbox single</h1>
+
+    <label for="checkbox">{{ checked }}</label>
+    <input type="checkbox" v-model="checked" id="checkbox">
 
   </div>
 
