@@ -66,9 +66,14 @@
     </select>
     <p>{{ selected1 }}</p>
 
-
     <h1>.lazy</h1>
     <input type="text" v-model.lazy="message">
+    <p>{{ message }}</p>
+
+    <h1>.trim</h1>
+    <input type="text" v-model="message">
+    <input type="text" v-model.trim="message">
+    <pre>{{ $data }}</pre>
     <p>{{ message }}</p>
 
   </div>
