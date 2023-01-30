@@ -6,7 +6,8 @@ const app = Vue.createApp({
     colors: [],
     color: '',
     selected: '',
-    selected1: ''
+    selected1: '',
+    age: 0
   }),
   watch: {
   },
