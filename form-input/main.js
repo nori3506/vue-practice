@@ -4,7 +4,8 @@ const app = Vue.createApp({
     message1: 'Hey',
     checked: false,
     colors: [],
-    color: ''
+    color: '',
+    selected: ''
   }),
   watch: {
   },
