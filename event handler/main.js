@@ -5,6 +5,9 @@ const app = Vue.createApp({
   watch: {
   },
   methods: {
+    clickHandler: function() {
+      this.counter++
+    }
   }
 })
 
