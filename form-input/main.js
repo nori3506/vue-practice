@@ -3,7 +3,8 @@ const app = Vue.createApp({
     message: 'Hello Nori',
     message1: 'Hey',
     checked: false,
-    colors: []
+    colors: [],
+    color: ''
   }),
   watch: {
   },
