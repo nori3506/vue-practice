@@ -1,5 +1,13 @@
-const helloComponent = {
-  template: '<p>Hello</p>'
+const buttonCounter = {
+  template: '<div><span>Count: </span> <button v-on:click="countUp">{{ count }}</button></div>',
+  data: () => ({
+    count: 0
+  }),
+  methods: {
+    countUp: function (event) {
+      this.count++
+    }
+  }
 }
 
 const app = Vue.createApp({
@@ -8,7 +16,7 @@ const app = Vue.createApp({
   }),
   components: {
     // component name should include "-" and kebab case like button-counter
-    'local-component': helloComponent
+    'button-counter': buttonCounter
   },
   watch: {
   },
