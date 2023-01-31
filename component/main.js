@@ -1,16 +1,20 @@
+const helloComponent = {
+  template: '<p>Hello</p>'
+}
+
 const app = Vue.createApp({
   data: () => ({
     
   }),
+  components: {
+    'local-component': helloComponent
+  },
   watch: {
   },
   methods: {
-    clickHandler: function () {
-      
-    }
   }
 })
-
+//Grobal
 app.component('hello-component', {
   template: '<p>Hello, Nori</p>'
 })
